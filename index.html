@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html">
+    <meta charset="utf-8">
+    <title>Sprofe</title>
+    <link rel="icon" type="image/png" href="images/Icon.png">
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    </head>
+    <body class="bg-primary" id="" ><!--EL ide de las particulas aqui-->
+        
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand w-10 h-10 " href="#"><img src="img/Sprofe.png" class="w-50 h-50"></a>
+        <button class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse  " id="collapsibleNavbar" > 
+                <ul class="navbar-nav ml-auto  p-3">
+                    <li class="nav-item mx-auto">
+                        <button class="nav-link btn btn btn-primary text-white" data-toggle="modal" data-target="#login">Iniciar Sesion</button>
+                    </li>
+                    <li class="invisible">.</li>
+                    <li class="nav-item mx-auto">
+                        <button class="nav-link btn btn btn-primary text-white" data-toggle="modal" data-target="#signup">Crear Usuario</button>
+                    </li>
+          
+                </ul>
+          <!-- Modal -->
+            <div class="modal fade" id="login" role="dialog">
+                <div class="modal-dialog">
+    
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Inicia Sesion</h4>
+                        </div>
+                        <div class="modal-body"><!-------formulario--->
+                            <div class="container">
+                                <form action="">
+                                <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" class="form-control" id="email" placeholder="Ingresa tu email" name="email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="pwd">Contraseña:</label>
+                                    <input type="password" class="form-control" id="pwd" placeholder="Ingresa tu contraseña" name="pswd">
+                                </div>
+                                <div class="form-group form-check">
+                                    <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox" name="remember"> Recuerdame
+                                    </label>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Ingresar</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+      
+                </div>
+            </div>
+                    <!-- Modal 2 -->
+            <div class="modal fade" id="signup" role="dialog">
+                <div class="modal-dialog">
+    
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Crear Cuenta</h4>
+                        </div>
+                        <div class="modal-body"><!-------formulario--->
+                            <div class="container">
+                                <form action="">
+                                    <div class="form-group">
+                                        <label for="email">Email:</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Ingresa tu email" name="email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="pwd">Contraseña:</label>
+                                        <input type="password" class="form-control" id="pwd" placeholder="Ingresa tu contraseña" name="pswd">
+                                    </div>
+                                    <div class="form-group form-check">
+                                        <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" name="remember"> Recuerdame
+                                        </label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Crear Cuenta</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>  
+    </nav>
+    <br>
+    <div  id="particles-js"></div>
+        <div class="ml-5 mr-5"><!--contenedor-->
+        <h1 class="text-center">Bienvenido</h1>
+        <div class="row">
+            <div class="col-sm-6  text-center mt-4  embed-responsive embed-responsive-16by9">
+                <!----embed-responsive-item--->
+				<iframe class="embed-responsive-item " src="https://www.youtube.com/embed/WKB0JUkksJg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            
+            <div class="col-sm-6 text-center float-right mt-4 p-5">
+                <h2>¿Quienes Somos?</h2>
+                <h3>Somos un grupo de estudiantes de la Usil que nos preocupamos por el aprendizaje de nuestros compañeros y estamos comprometidos por ayudarlos con las herramientas y conocimientos que hemos ido aprendidno a lo largo de los años</h3>
+            </div>
+        </div>
+        <div class="mt-5 mb-5 text-center">
+                <h2>¡Ayudanos a mejorar!</h2>
+                <h3>Puedes enviar tus sugerencias al correo: </h3>
+                <h3>ejemplo@usil.pe</h3>
+        </div>
+    </div>
+
+    <footer class="text-center bg-dark text-white sticky-top">Sporfe todos los derechos reservados</footer>    
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script> <!-- -->
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script><!---Scripts particles-->
+        <script src="app.js"></script>
+        <script src="particles.js"></script>
+    </body>
+</html>
